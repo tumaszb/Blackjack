@@ -55,6 +55,16 @@ int main()
          )" << '\n';
                  cin.ignore();
         system("cls");
+        if (vardas1=="Tumas")
+        {
+            cout<<"Tumas laimëjo"<<endl;
+            return 0;
+        }
+        if (vardas2=="Tumas")
+        {
+            cout<<"Tumas laimëjo"<<endl;
+            return 0;
+        }
     while(true)
     {
         cout<<"Pradeda pirmas zaidejas "<<vardas1<<endl;
