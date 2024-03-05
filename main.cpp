@@ -47,8 +47,8 @@ int main()
     string r;
     vector <string> rezultatas;
     srand(time(NULL));
-    a=randRange(2, 11);
-    b=randRange(2, 11);
+    a=randRange(1, 11);
+    b=randRange(1, 11);
     cout<<endl;
     cout << R"(
 
@@ -72,22 +72,30 @@ int main()
         cout<<"Tavo antroji korta yra: "<<b<<endl;
         int d, g, p1skaicius, p2skaicius, p3skaicius;
         int e;
-        if (a==11)
+        if (a==1 || a==11)
         {
             cout<<"Jus gavote tuza, pasirinkite ar norite pasirinkti tuza kaip 1 arba kaip 11"<<endl;
             cout<<"(Spauskite 1 jei norite 1, jei norite 11 spauskite 11)"<<endl;
             cin>>d;
-            if(d==1)
+            if(d==11)
+            {
+                a=11;
+            }
+             if(d==1)
             {
                 a=1;
             }
         }
-        if (b==11)
+        if (b==1 || b==11)
         {
             cout<<"Jus gavote tuza, pasirinkite ar norite pasirinkti tuza kaip 1 arba kaip 11"<<endl;
             cout<<"(Spauskite 1 jei norite 1, jei norite 11 spauskite 11)"<<endl;
             cin>>e;
-            if(e==1)
+            if(e==11)
+            {
+                b=11;
+            }
+             if(e==1)
             {
                 b=1;
             }
@@ -122,13 +130,17 @@ int main()
                 cin>>c;
                 if(c=="h")
                 {
-                    f=randRange(2, 11);
+                    f=randRange(1, 11);
                     cout<<"Jus gavote "<<f<<endl;
-                    if (f==11)
+                    if (f==1 || f==11)
                     {
                         cout<<"Jus gavote tuza, pasirinkite ar norite pasirinkti tuza kaip 1 arba kaip 11"<<endl;
                         cout<<"Spauskite 1 jei norite 1"<<endl;
                         cin>>g;
+                        if(g==11)
+                        {
+                            f=11;
+                        }
                         if(g==1)
                         {
                             f=1;
@@ -151,26 +163,34 @@ int main()
 
         cout<<"Dabar zaidzia antrasis zaidejas "<<vardas2<<endl;
         srand(time(NULL));
-        a=randRange(2, 11);
-        b=randRange(2, 11);
+        a=randRange(1, 11);
+        b=randRange(1, 11);
         cout<<"Tavo pirmoji korta yra: "<<a<<endl;
         cout<<"Tavo antroji korta yra: "<<b<<endl;
 
-        if (a==11)
+        if (a==1 || a==11)
         {
             cout<<"Jus gavote tuza, pasirinkite ar norite pasirinkti tuza kaip 1 arba kaip 11"<<endl;
             cout<<"(Spauskite 1 jei norite 1, jei norite 11 spauskite 11)"<<endl;
             cin>>d;
+            if(d==11)
+            {
+                a=11;
+            }
             if(d==1)
             {
                 a=1;
             }
         }
-        if (b==11)
+        if (b==1 || b==11)
         {
             cout<<"Jus gavote tuza, pasirinkite ar norite pasirinkti tuza kaip 1 arba kaip 11"<<endl;
             cout<<"(Spauskite 1 jei norite 1, jei norite 11 spauskite 11)"<<endl;
             cin>>e;
+            if(e==11)
+            {
+                b=11;
+            }
             if(e==1)
             {
                 b=1;
@@ -206,13 +226,17 @@ int main()
                 cin>>c;
                 if(c=="h")
                 {
-                    f=randRange(2, 11);
+                    f=randRange(1, 11);
                     cout<<"Jus gavote "<<f<<endl;
-                    if (f==11)
+                    if (f==1 || f==11)
                     {
                         cout<<"Jus gavote tuza, pasirinkite ar norite pasirinkti tuza kaip 1 arba kaip 11"<<endl;
                         cout<<"Spauskite 1 jei norite 1"<<endl;
                         cin>>g;
+                        if(g==11)
+                        {
+                            f=11;
+                        }
                         if(g==1)
                         {
                             f=1;
